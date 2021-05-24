@@ -1,11 +1,9 @@
-# Covihelp
 
-﻿
-Covihelp Documentation
+**Covihelp | help peoples and get help**
 
-  
 
-About Idea:
+
+**Description**
 
 Nowadays, whenever we want to help people, we just donate money to charities or somewhere else. But in many cases, we can’t trace where our money is used or if by mistake if we donate the money to the wrong charity our money that we gave to help the needy might even get laundered for some violent works or not get used for the purpose for what we donated
 
@@ -14,9 +12,11 @@ So to make this transparency we have developed an application. The main idea of 
 To show respect to the helpers, we call them warriors as they are helping society with their help.
 
   
+**Software Requirements:**
+ - Android studio
+ - java installed
 
-About the app:
-
+**Process Flow**
 We have divides our app into four sections as follow:
 
   
