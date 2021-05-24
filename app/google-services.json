@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "106794931587",
+    "project_id": "covihelp-aaab0",
+    "storage_bucket": "covihelp-aaab0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:106794931587:android:db446d55298c703d4bd2b6",
+        "android_client_info": {
+          "package_name": "com.rsin.covihelp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "106794931587-88dj14qf3pnhqi90m391pic1hne6tvdm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2OpM2q8MXmvLhTCay6FMJw9nJkYoTOfE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "106794931587-88dj14qf3pnhqi90m391pic1hne6tvdm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

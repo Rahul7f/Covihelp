@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".all_Activitys.FormActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <GridView
+                android:id="@+id/gridlayout"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:columnWidth="90dp"
+                android:numColumns="auto_fit"
+                android:verticalSpacing="10dp"
+                android:horizontalSpacing="10dp"
+                android:nestedScrollingEnabled="true"
+                android:scrollbars="horizontal"
+                android:gravity="center"
+                android:visibility="gone"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/add_imgbtn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:text="Choose Image"/>
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Upload Aadhar Card"
+              android:textSize="17dp"
+              android:layout_marginLeft="10dp"
+              />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+                <ImageView
+                    android:id="@+id/aadhar_card_font"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/a_front"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"/>
+                <ImageView
+                    android:id="@+id/aadahr_card_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/a_back"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"/>
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/title_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Title"
+                app:counterMaxLength="20"
+                app:counterEnabled="true"
+                android:layout_margin="10dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="20"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/description_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Description"
+                android:layout_margin="10dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+                <Spinner
+
+                    style="@style/Widget.AppCompat.DropDownItem.Spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/rectangle"
+                    android:layout_margin="10dp"
+                    android:id="@+id/catagory_spinner"
+                    android:drawSelectorOnTop="true"
+                    android:entries="@array/category"
+                    />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose state"
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"/>
+
+            <Spinner
+                android:id="@+id/state_spinner"
+                style="@style/Widget.AppCompat.DropDownItem.Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/rectangle"
+                android:layout_margin="10dp"
+                android:drawSelectorOnTop="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="choose city"
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"/>
+            <Spinner
+                android:id="@+id/city_spinner"
+                style="@style/Widget.AppCompat.DropDownItem.Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/rectangle"
+                android:layout_margin="10dp"
+                android:drawSelectorOnTop="true"
+                />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/pincode_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="PIN code"
+                android:layout_margin="10dp"
+                app:counterMaxLength="6"
+                app:counterEnabled="true"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/full_address_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Complete Address"
+                android:layout_margin="10dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/name_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:layout_margin="10dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/phone_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone No."
+                android:layout_margin="10dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:id="@+id/longlet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pick location address"
+                android:layout_margin="10dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/picklocation_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Pick Location"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/post_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="POST"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
